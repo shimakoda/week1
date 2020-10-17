@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*" : {
-      "X-Author": "shimakoda"
+      "X-Author": "shimakoda",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
