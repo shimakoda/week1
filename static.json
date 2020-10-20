@@ -4,5 +4,13 @@
       "X-Author": "shimakoda",
       "Access-Control-Allow-Origin": "*"
     }
+    "/login/" : {
+      "X-Author": "shimakoda",
+      "Access-Control-Allow-Origin": "*"
+    }
+    "/sample/" : {
+      "X-Author": "shimakoda",
+      "Access-Control-Allow-Origin": "*"
+    }
   }
 }
