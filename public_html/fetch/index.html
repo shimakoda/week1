@@ -7,11 +7,11 @@
    <input id="inp"/>
    <button id="bt">Go</button>
    <script>{
-    document.getElementById("bt").addEventListener('click',function ()
+    document.getElementById("bt").addEventListener('click', async function ()
     {
      txt = document.getElementById("inp").value
     
-	fetch(txt)
+	await fetch(txt)
     	.then(res => res.text())
     	.then(text => document.getElementById("inp").value = text);
     }  ); 
