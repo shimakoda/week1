@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Страница HTML5</title><meta charset="utf-8">
+ </head>
+ <body>
+   <input id="inp"/>
+   <button id="bt" onClick="fetchRes">Go</button>
+   <script>{
+    document.getElementById("bt").addEventListener('click',function ()
+    {
+     txt = document.getElementById("inp").value
+  		fetch(txt)
+    	.then(res => res.text())
+    	//.then(text => console.log(text));
+    }  ); 
+	}</script> 
+ </body>
+</html>
