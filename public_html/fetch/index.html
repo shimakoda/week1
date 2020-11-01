@@ -10,10 +10,12 @@
     document.getElementById("bt").addEventListener('click',function ()
     {
      txt = document.getElementById("inp").value
-  		fetch(txt)
+    
+	fetch(txt)
     	.then(res => res.text())
-    	//.then(text => console.log(text));
+    	.then(text => document.getElementById("inp").value = text);
     }  ); 
+  //console.clear();
 	}</script> 
  </body>
 </html>
