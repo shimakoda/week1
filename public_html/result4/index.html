@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Страница HTML5</title><meta charset="utf-8">
+  <title>shimakoda</title><meta charset="utf-8">
   <script>
-   window.addEventListener("load", await function() {
+   window.addEventListener("load", async function() {
     console.log("test!");
-   });  </script>
+    URL = 'http://shimakoda.herokuapp.com/result4/';
+    j = x => x.json();
+    
+	   await fetch(URL)
+    	.then(res => {'message': 'shimakoda'});
+   });  
+  </script>
  </head>
  <body>
    <input id="inp"/>
